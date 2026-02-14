@@ -5,14 +5,9 @@ import {
   useEffect,
   useState,
 } from 'react';
+import type {AsideContextValue} from './AsideContextValue';
 
-type AsideType = 'search' | 'cart' | 'mobile' | 'closed';
-type AsideContextValue = {
-  type: AsideType;
-  open: (mode: AsideType) => void;
-  close: () => void;
-};
-
+export type AsideType = 'search' | 'cart' | 'mobile' | 'closed';
 /**
  * A side bar component with Overlay
  * @example
